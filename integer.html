@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><a href="index.html">More Questions</a></h1>
+    <script>
+let a="abdf10560a39zyp56x0p3m";
+let arr=Array.from(a);
+console.log(arr)
+let arr1=arr.filter(Number)
+arr1=arr1.map(Number);
+console.log(arr1)
+let sum=arr1.reduce((sum,value)=>{
+    return sum+value
+});
+console.log("Sum of all integer number is :",sum)
+
+
+    </script>
+</body>
+</html>

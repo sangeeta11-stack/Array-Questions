@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let arr = [1, 3, 5, 5, 9, 9, 8, 6, 6,1];
+        console.log("Array:", arr);
+        // for (let i = 0; i <= arr.length; i++) {
+        //     for (let j = 1; j < arr.length; j++) {
+        //         let b = arr[i] == arr[i + j];
+        //         if (!b) {
+        //             arr[i] = arr[i];
+        //         }
+
+        //     }
+
+        // }
+
+        // arr = arr.filter(Boolean)
+        // arr = [... new Set(arr)];
+        // console.log(" Non Repeated Values: ", arr)
+
+
+        unique = arr.filter((v, i) => arr.indexOf(v) === arr.lastIndexOf(v));
+
+        console.log(unique);
+
+
+
+
+
+
+    </script>
+
+    <a href="index.html">More questions</a>
+</body>
+
+</html>

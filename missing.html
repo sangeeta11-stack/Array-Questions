@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1><a href="index.html">More Questions</a></h1>
+    <script>
+let arr = [1,2,3,6,8,9,10];
+let num = missing(arr);
+console.log(num)
+
+function missing(arr) {
+    let missingNumbers = [];
+
+    for (let i = 1; i <= 10; i++) {
+        if (!arr.includes(i)) {
+            missingNumbers.push(i);
+        }
+    }
+
+    return missingNumbers;
+}
+
+
+
+    </script>
+
+
+</body>
+
+</html>

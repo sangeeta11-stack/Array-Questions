@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let a = [1, 3, 5, 5, 5, 5, 8, 9, 9, 8, 6, 6];
+        console.log("Array:",a)
+
+        let arr = [];
+        for (let i = 0; i <= a.length; i++) {
+            for (let j = 1; j < a.length; j++) {
+                if (a[i] == a[i + j]) {
+                    arr[i] = a[i];
+                }
+
+            }
+
+        }
+        arr = arr.filter(Boolean)
+        arr = [... new Set(arr)];
+        console.log("Repeated Values: ",arr)
+
+
+
+
+    </script>
+
+    <a href="index.html">More questions</a>
+</body>
+
+</html>
