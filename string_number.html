@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let Statement = "Server is running on 3000 ? name";
+let ArrState = Array.from(Statement);
+
+let a = []; // For symbols 
+let b = []; // For alphabets
+let c = []; // For numbers
+let d = []; //for vowel
+
+
+for (let i = 0; i < ArrState.length; i++) {
+    let char = ArrState[i];
+    
+    if (!isNaN(parseInt(char))) {
+        c.push(char);
+    }
+    else if (/[A-Za-z]/.test(char)) {
+        b.push(char);
+
+        if(/[aeiouAEIOU]/.test(char)){
+            d.push(char);
+        }
+    }
+    else {
+        a.push(char);
+    }
+}
+
+console.log(b)
+a = a.join('').trim();
+b = b.join(''); 
+c = c.join(''); 
+d = d.join(''); 
+
+
+let Numb = a.length + c.length;
+
+// Output results
+console.log('Symbols:', a);
+console.log('Total number of Symbols and Spaces:', a.length);
+console.log('Alphabets:', b);
+console.log('Total number of Alphabets:', b.length);
+console.log('Numbers:', c);
+console.log('Total number of Numbers:', c.length);
+console.log('Vowels:', d);
+console.log('Total number of Vowels:', d.length);
+
+
+
+    </script>
+</body>
+</html>
